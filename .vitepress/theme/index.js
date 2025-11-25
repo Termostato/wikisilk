@@ -2,17 +2,18 @@ import DefaultTheme from 'vitepress/theme'
 import { watchEffect } from 'vue'
 import { useData } from 'vitepress'
 
-import CraftingTable from '../../components/CraftingTable.vue'
-import SmithingTable from '../../components/SmithingTable.vue'
-import ShufflingCraftingTable from '../../components/ShufflingCraftingTable.vue'
+// Components with missing assets - commented out for SilkCraft wiki
+// import CraftingTable from '../../components/CraftingTable.vue'
+// import SmithingTable from '../../components/SmithingTable.vue'
+// import ShufflingCraftingTable from '../../components/ShufflingCraftingTable.vue'
 import ToolTip from '../../components/ToolTip.vue'
-import ShufflingSmithingTable from '../../components/ShufflingSmithingTable.vue'
-import EnchantedItem from '../../components/EnchantedItem.vue'
-import ImageShuffler from '../../components/ImageShuffler.vue'
-import Furnace from '../../components/Furnace.vue'
-import BrewingStand from '../../components/BrewingStand.vue'
-import Anvil from '../../components/Anvil.vue'
-import Trading from '../../components/Trading.vue'
+// import ShufflingSmithingTable from '../../components/ShufflingSmithingTable.vue'
+// import EnchantedItem from '../../components/EnchantedItem.vue'
+// import ImageShuffler from '../../components/ImageShuffler.vue'
+// import Furnace from '../../components/Furnace.vue'
+// import BrewingStand from '../../components/BrewingStand.vue'
+// import Anvil from '../../components/Anvil.vue'
+// import Trading from '../../components/Trading.vue'
 import AudioPlayer from '../../components/AudioPlayer.vue'
 import YouTubeEmbed from '../../components/YouTubeEmbed.vue'
 import FeatureSection from '../../components/FeatureSection.vue'
@@ -44,7 +45,8 @@ export default {
     }
   },
   enhanceApp({ app }) {
-    app.component('CraftingTable', CraftingTable)
+    // Components with missing assets - commented out for SilkCraft wiki
+    // app.component('CraftingTable', CraftingTable)
     app.component('VersusRow', VersusRow)
     app.component('ZigZagShowcase', ZigZagShowcase)
     app.component('MansoryCard', MansoryCard)
@@ -55,16 +57,16 @@ export default {
     app.component('ImageCarousel', ImageCarousel)
     app.component('ParallaxHero', ParallaxHero)
     app.component('StatBadge', StatBadge)
-    app.component('SmithingTable', SmithingTable)
-    app.component('ShufflingCraftingTable', ShufflingCraftingTable)
+    // app.component('SmithingTable', SmithingTable)
+    // app.component('ShufflingCraftingTable', ShufflingCraftingTable)
     app.component('ToolTip', ToolTip)
-    app.component('ShufflingSmithingTable', ShufflingSmithingTable)
-    app.component('EnchantedItem', EnchantedItem)
-    app.component('ImageShuffler', ImageShuffler)
-    app.component('Furnace', Furnace)
-    app.component('BrewingStand', BrewingStand)
-    app.component('Anvil', Anvil)
-    app.component('Trading', Trading)
+    // app.component('ShufflingSmithingTable', ShufflingSmithingTable)
+    // app.component('EnchantedItem', EnchantedItem)
+    // app.component('ImageShuffler', ImageShuffler)
+    // app.component('Furnace', Furnace)
+    // app.component('BrewingStand', BrewingStand)
+    // app.component('Anvil', Anvil)
+    // app.component('Trading', Trading)
     app.component('AudioPlayer', AudioPlayer)
     app.component('YouTubeEmbed', YouTubeEmbed)
     app.component('FeatureSection', FeatureSection)

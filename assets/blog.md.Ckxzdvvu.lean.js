@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as p,ai as r}from"./chunks/framework.DMRKKuRm.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blog.md","filePath":"blog.md"}'),a={name:"blog.md"};function s(i,t,n,l,c,g){return p(),o("div",null,t[0]||(t[0]=[r("",97)]))}const u=e(a,[["render",s]]);export{h as __pageData,u as default};

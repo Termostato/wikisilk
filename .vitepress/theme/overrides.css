@@ -1,0 +1,329 @@
+/* Only for pages that set wide: true (or layoutClass: wide-structure) */
+body.wide-structure {
+  --vp-layout-max-width: 1200px !important;
+  --vp-content-width: 900px !important;
+  --vp-aside-width: 320px !important;
+}
+
+/* Relax container clamps only on wide pages */
+body.wide-structure .VPContent .container,
+body.wide-structure .VPHome .container,
+body.wide-structure .VPDoc .container,
+body.wide-structure .VPDoc .content,
+body.wide-structure .VPDoc .content-container {
+  max-width: none !important;
+}
+
+/* Optional: remove centering to get a fuller-bleed feel */
+body.wide-structure .VPDoc .container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+/* ============================================
+   SAKURA / ORIENTAL THEME - SilkCraft Network
+   ============================================ */
+
+/* Colores Sakura - Variables principales */
+:root {
+  /* Colores base sakura */
+  --sakura-pink: #FFB7C5;
+  --sakura-pink-light: #FFC0CB;
+  --sakura-pink-soft: #FFE4E1;
+  --sakura-pink-dark: #D87093;
+  --sakura-pink-deep: #C2185B;
+  --sakura-cream: #FFF8DC;
+  --sakura-beige: #FFE4B5;
+  --sakura-white: #FFFFFF;
+  
+  /* Aplicar colores sakura al tema VitePress */
+  --vp-c-brand: var(--sakura-pink);
+  --vp-c-brand-1: var(--sakura-pink);
+  --vp-c-brand-2: var(--sakura-pink-light);
+  --vp-c-brand-3: var(--sakura-pink-dark);
+  --vp-c-brand-soft: var(--sakura-pink-soft);
+  
+  /* Colores de hover */
+  --vp-c-brand-hover: var(--sakura-pink-light);
+  --vp-c-brand-active: var(--sakura-pink-dark);
+}
+
+/* Modo claro (predeterminado en VitePress) */
+:root {
+  /* Colores de fondo modo claro - Blanco puro */
+  --vp-c-bg: #FFFFFF;
+  --vp-c-bg-alt: #FFFFFF;
+  --vp-c-bg-soft: #F8F8F8;
+  
+  /* Colores de texto modo claro */
+  --vp-c-text: #2a2a2a;
+  --vp-c-text-1: #1a1a1a;
+  --vp-c-text-2: #3a3a3a;
+  
+  /* Colores de borde modo claro */
+  --vp-c-border: rgba(216, 112, 147, 0.3);
+  --vp-c-divider: rgba(216, 112, 147, 0.2);
+}
+
+/* Modo oscuro (cuando html tiene clase .dark) */
+html.dark {
+  /* Colores de fondo modo oscuro */
+  --vp-c-bg: #1a1a1a;
+  --vp-c-bg-alt: #242424;
+  --vp-c-bg-soft: #2a2a2a;
+  
+  /* Colores de texto modo oscuro */
+  --vp-c-text: #e0e0e0;
+  --vp-c-text-1: #f0f0f0;
+  --vp-c-text-2: #d0d0d0;
+  
+  /* Colores de borde modo oscuro */
+  --vp-c-border: rgba(255, 183, 197, 0.2);
+  --vp-c-divider: rgba(255, 183, 197, 0.15);
+}
+
+/* Botones con estilo sakura */
+.VPButton.brand {
+  background: linear-gradient(135deg, var(--sakura-pink) 0%, var(--sakura-pink-dark) 100%);
+  border-color: var(--sakura-pink);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 183, 197, 0.3);
+}
+
+.VPButton.brand:hover {
+  background: linear-gradient(135deg, var(--sakura-pink-light) 0%, var(--sakura-pink) 100%);
+  box-shadow: 0 4px 16px rgba(255, 183, 197, 0.5);
+  transform: translateY(-2px);
+}
+
+html:not(.dark) .VPButton.brand {
+  box-shadow: 0 3px 10px rgba(255, 183, 197, 0.4);
+}
+
+html:not(.dark) .VPButton.brand:hover {
+  box-shadow: 0 5px 20px rgba(255, 183, 197, 0.6);
+}
+
+/* Enlaces con acento sakura */
+a {
+  color: var(--sakura-pink);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--sakura-pink-light);
+}
+
+/* Sidebar con toque sakura */
+.VPSidebar {
+  background: var(--vp-c-bg-soft);
+  border-right: 1px solid var(--vp-c-border);
+}
+
+html:not(.dark) .VPSidebar {
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.VPSidebar .nav-link.active {
+  color: var(--sakura-pink);
+}
+
+html.dark .VPSidebar .nav-link.active {
+  background: rgba(255, 183, 197, 0.1);
+}
+
+html:not(.dark) .VPSidebar .nav-link.active {
+  background: rgba(255, 183, 197, 0.2);
+  box-shadow: 0 2px 4px rgba(255, 183, 197, 0.15);
+}
+
+.VPSidebar .nav-link:hover {
+  color: var(--sakura-pink-light);
+}
+
+html.dark .VPSidebar .nav-link:hover {
+  background: rgba(255, 183, 197, 0.05);
+}
+
+html:not(.dark) .VPSidebar .nav-link:hover {
+  background: rgba(255, 183, 197, 0.12);
+}
+
+/* Navegación superior */
+.VPNav {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+html.dark .VPNav {
+  background: rgba(26, 26, 26, 0.95);
+}
+
+html:not(.dark) .VPNav {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero section con gradiente sakura */
+.VPHome .VPHero .name {
+  background: linear-gradient(135deg, var(--sakura-pink) 0%, var(--sakura-pink-light) 50%, var(--sakura-pink-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Badges y tags */
+.badge, .tag {
+  border: 1px solid var(--sakura-pink);
+}
+
+html.dark .badge, html.dark .tag {
+  background: rgba(255, 183, 197, 0.2);
+  color: var(--sakura-pink-light);
+}
+
+html:not(.dark) .badge, html:not(.dark) .tag {
+  background: rgba(255, 183, 197, 0.2);
+  color: var(--sakura-pink-dark);
+  box-shadow: 0 2px 4px rgba(255, 183, 197, 0.2);
+}
+
+/* Code blocks con borde sakura */
+div[class*="language-"] {
+  border: 1px solid var(--vp-c-border);
+}
+
+html:not(.dark) div[class*="language-"] {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background: #F8F8F8;
+}
+
+/* Tablas con acentos sakura */
+table {
+  border-color: var(--vp-c-border);
+}
+
+table th {
+  border-color: var(--sakura-pink);
+}
+
+html.dark table th {
+  background: rgba(255, 183, 197, 0.1);
+}
+
+html:not(.dark) table th {
+  background: rgba(255, 183, 197, 0.18);
+  box-shadow: 0 1px 3px rgba(255, 183, 197, 0.15);
+}
+
+html.dark table tr:hover {
+  background: rgba(255, 183, 197, 0.05);
+}
+
+html:not(.dark) table tr:hover {
+  background: rgba(255, 183, 197, 0.12);
+}
+
+/* Scrollbar personalizado sakura */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: var(--sakura-pink-dark);
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--sakura-pink);
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: var(--sakura-pink);
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: var(--sakura-pink-dark);
+}
+
+/* Footer con estilo sakura */
+.VPFooter {
+  background: var(--vp-c-bg-soft);
+  border-top: 1px solid var(--vp-c-border);
+  color: var(--vp-c-text-2);
+}
+
+html:not(.dark) .VPFooter {
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Search con acento sakura */
+.VPLocalSearchBox .result {
+  border-color: var(--vp-c-border);
+}
+
+html.dark .VPLocalSearchBox .result:hover {
+  background: rgba(255, 183, 197, 0.1);
+  border-color: var(--sakura-pink);
+}
+
+html:not(.dark) .VPLocalSearchBox .result:hover {
+  background: rgba(255, 183, 197, 0.15);
+  border-color: var(--sakura-pink);
+  box-shadow: 0 2px 6px rgba(255, 183, 197, 0.2);
+}
+
+/* Callouts y alertas con estilo sakura */
+.custom-block.tip {
+  border-color: var(--sakura-pink);
+}
+
+html.dark .custom-block.tip {
+  background: rgba(255, 183, 197, 0.1);
+}
+
+html:not(.dark) .custom-block.tip {
+  background: rgba(255, 183, 197, 0.15);
+  box-shadow: 0 2px 4px rgba(255, 183, 197, 0.1);
+}
+
+.custom-block.warning {
+  border-color: var(--sakura-pink-dark);
+}
+
+html.dark .custom-block.warning {
+  background: rgba(216, 112, 147, 0.1);
+}
+
+html:not(.dark) .custom-block.warning {
+  background: rgba(216, 112, 147, 0.15);
+  box-shadow: 0 2px 4px rgba(216, 112, 147, 0.1);
+}
+
+.custom-block.danger {
+  border-color: var(--sakura-pink-deep);
+}
+
+html.dark .custom-block.danger {
+  background: rgba(194, 24, 91, 0.1);
+}
+
+html:not(.dark) .custom-block.danger {
+  background: rgba(194, 24, 91, 0.15);
+  box-shadow: 0 2px 4px rgba(194, 24, 91, 0.1);
+}
+
+/* Efectos de transición suaves */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}

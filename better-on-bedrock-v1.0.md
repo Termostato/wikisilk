@@ -1,7 +1,7 @@
 
 # SilkCraft v1.0 - Release!!
 
-![image](/Main/assets/bob-rebrand.png)
+<!-- Image removed: bob-rebrand.png -->
 
 New update for SilkCraft is with us, with tons of exciting bug fixes, changes and new content.
 

@@ -3,7 +3,7 @@
 # 1.21.20 Stable Support!!
 
 <div style="display: flex; align-items: center;">
-  <img src="/Main/assets/bob-rebrand.png" alt="Example Image">
+  <!-- Image removed: bob-rebrand.png -->
 </div>
 
 - Donate to my Ko-Fi: https://ko-fi.com/poggythefoxxo

@@ -1,7 +1,7 @@
 # Luminous Dreams' Changelog
 
 <div style="display: flex; align-items: center;">
-  <img src="/Main/assets/luminous_dreams.png" alt="Example Image">
+  <!-- Image removed: luminous_dreams.png -->
 </div>
 
 ## [Download Here](https://www.mediafire.com/file/ys01beb6in5qul1/luminous_dreams_water_beta2.mcpack/file)
